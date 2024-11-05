@@ -14,15 +14,36 @@ initial-scale=1">
         aria-labelledby="modalCadastro" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
+
                 <div class="modal-header">
                     <h1 class="modal-title fs-5">Cadastro de Usuário</h1>
                 </div>
+
                 <div class="modal-body">
-
+                    <div class="d-none alert alert-dismissible fade
+                    alert-modal-cadastro" role="alert">
+                    </div>
+                    <form>
+                        <div class="mb-3">
+                            <label for="usuarioCadastroInput" class="col-form-label">Usuário</label>
+                            <input type="text" id="usuarioCadastroInput" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="passwordCadastroInput" class="col-form-label">Senha</label>
+                            <input type="password" id="passwordCadastroInput" class="form-control">
+                        </div>
+                    </form>
                 </div>
+
                 <div class="modal-footer">
-
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Cancelar
+                    </button>
+                    <button onclick="cadastrarUsuario()" type="button" class="btn btn-primary">
+                        Cadastrar
+                    </button>
                 </div>
+
             </div>
         </div>
     </div>
@@ -63,9 +84,8 @@ initial-scale=1">
 
         <div class="row justify-content-center">
             <div class="col-md-8">
-                <div class="d-none alert alert-danger alert-dismissible fade" role="alert">
-                    Preencha todos os campos!
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                <div class="d-none alert alert-dismissible fade alert-filme" 
+                    role="alert">
                 </div>
             </div>
         </div>
